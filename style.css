@@ -1,0 +1,421 @@
+/* ********* header css********** */
+
+.header {
+    background: var(--back1);
+    color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: space-between;
+}
+
+.site-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-info h1 {
+    text-transform: uppercase;
+}
+
+.navbar li a:link,
+.navbar li a:visited {
+    text-transform: capitalize;
+    background-color: var(--back2);
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    color: var(--color1);
+    transition: all .4s ease-in-out;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar ul li {
+    flex-grow: 1;
+}
+
+.navbar ul li a:focus,
+.navbar ul li a:active,
+.navbar ul li a:hover {
+    color: var(--color-white);
+    background-color: var(--color-dark);
+}
+
+/* ############ content area css ################### */
+
+.content-area {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.main-content-area {
+    padding: 10px;
+}
+
+.post {
+    background-color: var(--color-white);
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.post figure {
+    display: flex;
+    flex-direction: column;
+}
+
+.post figcaption h2 {
+    background-color: var(--color-primary);
+    text-align: center;
+    color: var(--color1);
+    text-transform: capitalize;
+    padding: 20px;
+}
+
+.post figcaption p {
+    color: var(--color-dark);
+    padding: 25px;
+    line-height: 1.5;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* watch now section css */
+
+.watch-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+
+.watch-img img {
+    width: 100%;
+   border-radius: 20px;
+}
+
+.watch-content {
+    padding: 20px;
+}
+
+.watch-content h3 {
+    text-transform: capitalize;
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.watch-content p {
+    margin-bottom: 15px;
+}
+
+.watch-content p span {
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+/* download section */
+
+.downloadImg {
+    height: 250px;
+}
+
+.downloadImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+.downloadInfo {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.downloadCast {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.downloadCast h4,
+.downloadGenre h4 {
+    flex: 0 0 80px;
+    align-self: center;
+}
+
+.downloadGenre p {
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.downloadCast img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.downloadRating {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.downloadContent {
+    background-color: var(--color-dark);
+}
+
+.downloadContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.downloadLink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-transform: capitalize;
+    font-size: 22px;
+}
+
+/* gallery style */
+
+.galleryImg {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gImg {
+    flex-grow: 1;
+    height: 300px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.gImg a {
+    display: block;
+    height: 100%;
+}
+
+.gImg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    transition: all 0.7s ease-in-out;
+}
+
+.gImg:hover{
+    transform: scale(1.01);
+}
+
+
+.galleryImg {
+    margin-left: -10px;
+}
+
+
+
+.footer {
+    background:var(--back1);
+    color: var(--color-white);
+    text-align: center;
+    padding: 20px;
+}
+
+.widget {
+    padding: 20px;
+    text-transform: capitalize;
+}
+
+.widgetCard {
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.widgetCard h3 {
+    margin-bottom: 10px;
+}
+.widgetCard ul{
+    margin-left: 20px;
+}
+.widgetCard ul li a {
+    color: var(--color-dark);
+    font-weight: bold;
+}
+
+
+
+@media all and (min-width:768px) {
+    .posts {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .one-half {
+        width: 49%;
+    }
+
+    .one-third {
+        width: 32%;
+    }
+
+    .watch-card {
+        flex-direction: row;
+    }
+
+    .watch-img {
+        flex: 0 0 400px;
+    }
+
+    .watch-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .reverse .watch-img {
+        order: 1;
+    }
+
+    .watch-content {
+        padding: 30px;
+        align-self: center;
+    }
+
+    .downloadImg {
+        height: auto;
+        background-color: #000;
+    }
+
+    .downloadContent {
+        flex-direction: row;
+    }
+
+    .downloadInfo {
+        flex-grow: 1;
+    }
+
+    .downloadLink,
+    .downloadRating {
+        justify-content: center;
+    }
+
+    .gImg {
+        flex-basis: 48%;
+        flex-grow: 0;
+        justify-content: space-between;
+    }
+
+    
+
+
+
+
+}
+
+
+
+
+@media all and (min-width:1180px) {
+    .navbar ul {
+        flex-direction: row;
+    }
+
+    .content-area {
+        flex-direction: row;
+    }
+
+    .main-content-area {
+        flex-grow: 1;
+        padding: 20px;
+    }
+
+    .sidebar-section {
+        flex: 0 0 400px;
+    }
+
+    .posts {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .post {
+        width: 100%;
+    }
+
+    .one-half {
+        width: 49%;
+    }
+
+    .one-third {
+        width: 32%;
+    }
+
+    .downloadLink,
+    .downloadRating {
+        flex: 0 0 200px;
+        justify-content: center;
+    }
+
+    /* 1 5 9 */
+    /* 2 6 */
+    /* 3 7 */
+    /* 4 8 */
+
+
+    .galleryImg :nth-child(4n+1) {
+        flex-basis: 400px;
+    }
+
+    .galleryImg :nth-child(4n+2) {
+        flex-basis: 320px;
+    }
+
+    .galleryImg :nth-child(4n+3) {
+        flex-basis: 250px;
+    }
+
+    .galleryImg :nth-child(4n+4) {
+        flex-basis: 200px;
+    }
+
+    .gImg {
+        flex-grow: 1;
+    }
+
+}
